@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive, beginner-to-interview-ready course on Microsoft Windows, Active Directory, Entra ID, Microsoft 365, Intune, PowerShell, and the Microsoft security stack for cybersecurity roles." />
+  <title>Microsoft Cybersecurity Mastery — Interactive Course</title>
+  <link rel="preconnect" href="data:," />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <button id="menuToggle" class="icon-btn" aria-label="Toggle navigation" title="Toggle menu">☰</button>
+    <a class="brand" href="#/home">
+      <span class="brand-mark">🛡️</span>
+      <span class="brand-text">
+        <strong>Microsoft Cybersecurity Mastery</strong>
+        <small>Interactive course · interview-ready</small>
+      </span>
+    </a>
+
+    <div class="topbar-search">
+      <input id="searchInput" type="search" placeholder="Search lessons, commands, concepts…  ( / )" autocomplete="off" />
+    </div>
+
+    <div class="topbar-right">
+      <div class="progress-pill" id="progressPill" title="Your course progress">
+        <div class="progress-pill-bar"><span id="progressFill"></span></div>
+        <span id="progressText">0%</span>
+      </div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light / dark theme" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- ===== Sidebar ===== -->
+    <nav id="sidebar" class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-section">
+        <a class="navlink" href="#/home" data-nav="home"><span class="navicon">🏠</span> Home / Dashboard</a>
+        <a class="navlink" href="#/interview" data-nav="interview"><span class="navicon">🎯</span> Interview Prep</a>
+        <a class="navlink" href="#/flashcards" data-nav="flashcards"><span class="navicon">🃏</span> Flashcards</a>
+        <a class="navlink" href="#/cheatsheets" data-nav="cheatsheets"><span class="navicon">📋</span> Cheat Sheets</a>
+        <a class="navlink" href="#/glossary" data-nav="glossary"><span class="navicon">📖</span> Glossary</a>
+      </div>
+      <div class="sidebar-divider"><span>Modules</span></div>
+      <div id="moduleNav" class="module-nav"><!-- built by app.js --></div>
+      <div class="sidebar-foot">
+        <button id="resetProgress" class="text-btn">↺ Reset progress</button>
+        <p class="muted-foot">Progress is saved in your browser only.</p>
+      </div>
+    </nav>
+    <div id="backdrop" class="backdrop"></div>
+
+    <!-- ===== Main content ===== -->
+    <main id="content" class="content" tabindex="-1"><!-- rendered by app.js --></main>
+  </div>
+
+  <!-- Data layer: namespace first, then content, then engine LAST -->
+  <script src="js/data/course.js"></script>
+  <script src="js/data/mod-00.js"></script>
+  <script src="js/data/mod-01.js"></script>
+  <script src="js/data/mod-02.js"></script>
+  <script src="js/data/mod-03.js"></script>
+  <script src="js/data/mod-04.js"></script>
+  <script src="js/data/mod-05.js"></script>
+  <script src="js/data/mod-06.js"></script>
+  <script src="js/data/mod-07.js"></script>
+  <script src="js/data/mod-08.js"></script>
+  <script src="js/data/mod-09.js"></script>
+  <script src="js/data/mod-10.js"></script>
+  <script src="js/data/interview.js"></script>
+  <script src="js/data/glossary.js"></script>
+  <script src="js/data/cheatsheets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
