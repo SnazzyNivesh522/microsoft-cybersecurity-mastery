@@ -5,6 +5,15 @@ Windows, Active Directory, **Microsoft Entra ID**, Microsoft 365, Intune, PowerS
 **Microsoft Defender XDR & Sentinel** — written from the perspective of a senior Microsoft /
 Azure cloud / network-security engineer, and aimed squarely at landing a **cybersecurity job**.
 
+### 🌐 [**▶ Launch the course →**](https://snazzynivesh522.github.io/microsoft-cybersecurity-mastery/)
+
+No install, no sign-up — runs entirely in your browser, and your progress is saved locally.
+
+[![Live on GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-2ea44f?logo=github)](https://snazzynivesh522.github.io/microsoft-cybersecurity-mastery/)
+[![Deploy: GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=githubpages)](https://github.com/SnazzyNivesh522/microsoft-cybersecurity-mastery/deployments)
+![No build step](https://img.shields.io/badge/Build-none%20·%20vanilla%20JS-f7df1e?logo=javascript&logoColor=000)
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
+
 > Content is current as of **June 2026** (Azure AD → Entra ID, Endpoint Manager → Intune admin
 > center, MSOnline/AzureAD PowerShell retirement, Microsoft 365 Defender → Defender XDR, Sentinel
 > in the unified Defender portal).
@@ -13,11 +22,16 @@ Azure cloud / network-security engineer, and aimed squarely at landing a **cyber
 
 ## ▶️ How to open it
 
-**Option 1 — just open the file (simplest).**
-Double-click **`index.html`**, or open it in your browser. Everything runs locally with no
-internet connection and no install. Your progress is saved in the browser.
+**Option 1 — use the hosted version (nothing to download).**
+Just open **<https://snazzynivesh522.github.io/microsoft-cybersecurity-mastery/>**. It's the same
+app, deployed via GitHub Pages, with all the “Copy” buttons working. Progress is saved in your
+browser.
 
-**Option 2 — run a tiny local server (recommended for the “Copy” buttons).**
+**Option 2 — just open the file.**
+Clone/download the repo, then double-click **`index.html`** to open it in your browser. Everything
+runs locally with no internet connection and no install. Your progress is saved in the browser.
+
+**Option 3 — run a tiny local server (recommended for the “Copy” buttons offline).**
 Some browsers restrict the clipboard API on `file://`. From this folder:
 
 ```bash
@@ -100,6 +114,29 @@ js/data/cheatsheets.js# quick-reference cheat sheets
 It's all **dependency-free vanilla HTML/CSS/JS** — no build step, no npm, no frameworks. To add a
 lesson, edit the relevant `mod-XX.js`; to add a module, drop in a new `mod-11.js` (with
 `window.COURSE.modules.push({...})`) and add a `<script>` line to `index.html`.
+
+---
+
+## 🚀 Deployment
+
+The site is hosted on **GitHub Pages**, served from the `main` branch root — no CI or build step.
+A `.nojekyll` file tells Pages to serve the files as-is. Because the app uses **relative asset
+paths** and **hash-based routing** (`#/home`, `#/m/...`), it works correctly under the project
+subpath with no extra configuration.
+
+To publish changes, just push to `main` — Pages rebuilds automatically (usually within a minute):
+
+```bash
+git add -A
+git commit -m "Update course content"
+git push
+```
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE) — free to use, modify, and share.
 
 ---
 
